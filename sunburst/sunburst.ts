@@ -1,18 +1,3 @@
-/* eslint-disable simple-import-sort/imports */
-/**
- * @file Custom Chart Implementation from chart.js library
- *
- * @fileoverview
- *
- * @author Chetan Agrawal <chetan.agrawal@thoughtspot.com>
- *
- * Copyright: ThoughtSpot Inc. 2023
- */
-
-import Highcharts from 'highcharts/es-modules/masters/highcharts.src';
-import 'highcharts/es-modules/masters/modules/sunburst.src';
-
-import _ from 'lodash';
 import {
     ChartColumn,
     ChartConfig,
@@ -24,7 +9,6 @@ import {
     getChartContext,
     Query,
 } from '@thoughtspot/ts-chart-sdk';
-import { PointOptionsObject } from 'highcharts';
 
 function getDataForColumn(
     column: ChartColumn,
@@ -211,8 +195,8 @@ const init = async () => {
             ),
         renderChart: (ctx) => renderChart(ctx),
     });
-
-    renderChart(ctx);
+    console.dir(ctx);
+    // renderChart(ctx);
 };
 
 await init();
