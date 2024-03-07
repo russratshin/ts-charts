@@ -8,7 +8,7 @@ import {
     DataPointsArray,
     getChartContext,
     Query,
-} from '@thoughtspot/ts-chart-sdk';
+}
 
 function getDataForColumn(
     column: ChartColumn,
