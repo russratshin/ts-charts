@@ -1,4 +1,4 @@
-import {
+const {
     ChartColumn,
     ChartConfig,
     ChartModel,
