@@ -148,6 +148,7 @@ const renderChart = async (ctx: CustomChartContext): Promise<void> => {
 };
 
 const init = async () => {
+    alert('hi');
     const ctx = await getChartContext({
         getDefaultChartConfig: (chartModel: ChartModel): ChartConfig[] => {
             const cols = chartModel.columns;
