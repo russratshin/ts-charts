@@ -8,7 +8,7 @@ import {
     DataPointsArray,
     getChartContext,
     Query,
-}
+} = tschart;
 
 function getDataForColumn(
     column: ChartColumn,
